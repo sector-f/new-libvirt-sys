@@ -22,7 +22,7 @@ fn main() {
     // # include <libvirt/libvirt-stream.h>
 
         let bindings = bindgen::Builder::default()
-            .header_contents("libvirt.h", "#include <libvirt/libvirt.h>")
+            .header_contents("libvirt.h", "#include <libvirt/libvirt.h>\n#include <libvirt/virterror.h>")
             .generate()
             .expect("Unable to generate bindings");
 
