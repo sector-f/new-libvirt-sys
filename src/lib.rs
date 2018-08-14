@@ -2,5 +2,4 @@
 #![allow(non_camel_case_types)]
 #![allow(non_snake_case)]
 
-#[link(name = "virt")]
 include!(concat!(env!("OUT_DIR"), "/bindings.rs"));
