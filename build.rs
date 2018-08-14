@@ -23,6 +23,7 @@ fn main() {
 
         let bindings = bindgen::Builder::default()
             .header_contents("libvirt.h", "#include <libvirt/libvirt.h>\n#include <libvirt/virterror.h>")
+            .derive_default(true)
             .generate()
             .expect("Unable to generate bindings");
 
